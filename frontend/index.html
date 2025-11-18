@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Alunos - Prova</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <h2>Formulário de Cadastro de Aluno</h2>
+        <p>Preencha os dados para registrar um novo aluno.</p>
+
+        <form id="aluno-form">
+            
+            <div class="form-group">
+                <label for="nome_completo">Nome Completo:</label>
+                <input type="text" id="nome_completo" name="nome_completo" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="usuario_acesso">Usuário de Acesso:</label>
+                <input type="text" id="usuario_acesso" name="usuario_acesso" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="senha_plana">Senha:</label>
+                <input type="password" id="senha_plana" name="senha_plana" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email_aluno">E-mail:</label>
+                <input type="email" id="email_aluno" name="email_aluno" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="observacao">Observação (Opcional):</label>
+                <textarea id="observacao" name="observacao" rows="3"></textarea>
+            </div>
+            
+            <button type="submit" id="submit-button">Cadastrar</button>
+
+        </form>
+        
+        <div id="message"></div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
