@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const data = Object.fromEntries(formData.entries());
 
         try {
-            const response = await fetch('http://localhost:3001/alunos', {
+            const response = await fetch('p2compnuvkelvyn-dsb3apdqfnb3g4ck.canadacentral-01.azurewebsites.net', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
